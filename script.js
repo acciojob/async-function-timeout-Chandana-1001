@@ -6,7 +6,7 @@ document.getElementById('btn').addEventListener('click', async function() {
     const delay = parseInt(document.getElementById('delay').value);
 
     // If the input fields are empty or delay is not a number, handle it
-    if (!text || isNaN(delay)) {
+    if (!text || !(delay)) {
         document.getElementById('output').innerText = "Please provide valid text and delay.";
         return;
     }
