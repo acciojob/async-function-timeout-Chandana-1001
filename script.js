@@ -1,3 +1,30 @@
+document.getElementById('btn').addEventListner('click', async function(){
+	const text=document.getElementById('text').value;
+	const delay=document.getElementbyId('delay').value;
+
+	if(!text || !delay)
+	{
+		document.getElementById('btn').innerText="please provide a valid text.";
+		return;
+	}
+	const awaitmessage= (ms) => {
+		return new promise(resolve) =>{
+			setTimeOut(()=>{
+				
+			},ms)
+		}
+	}
+	await awaitmessage(delay);
+	document.getElementById('btn').innerText=text;
+	
+})
+
+
+
+
+
+
+
 //your JS code here. If required.
 // Attach event listener to the button
 document.getElementById('btn').addEventListener('click', async function() {
